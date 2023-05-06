@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="description" content="Modern Unit Convertor" />
+
+    <!-- Adding font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Adding favicon -->
+    <link rel="icon" href="favicon-96x96.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking othe files -->
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="script.js"></script>
+
+    <title>Unit Convetor</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="heading heading-primary heading--gradient">Modern</h1>
+        <!-- <br /> -->
+        <h1 class="heading heading-primary bottom">Unit Convertor</h1>
+        <!-- <nav class="main-nav"></nav> -->
+      </header>
+      <main>
+        <div>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <div>
+                <p class="adding-border button--length">📏 LENGTH</p>
+              </div>
+              <div>
+                <p class="adding-border button--temp">🌡️ TEMPERATURE</p>
+              </div>
+              <div>
+                <p class="adding-border button--area">🟨 AREA</p>
+              </div>
+              <div>
+                <p class="adding-border button--vol">📦 VOLUME</p>
+              </div>
+              <div>
+                <p class="adding-border button--weight">⚖️ WEIGHT</p>
+              </div>
+              <div>
+                <p class="adding-border button--time">⏱️ TIME</p>
+              </div>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="option">
+          <section class="units-option option--length option--inactive">
+            <section class="options">
+              <p class="units-label">Length Units:</p>
+              <div class="menu">
+                <div class="menu menu--from">
+                  <label class="label-padding" for="from-unit">From:</label>
+                  <select
+                    name="from-unit from-unit--length"
+                    id="from-unit--length"
+                  >
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Meter(m)</option>
+                    <option value="2">Kilometer(km)</option>
+                    <option value="3">Milimeter(mm)</option>
+                  </select>
+                </div>
+                <div class="menu menu--to">
+                  <label class="lable-padding" for="to-unit">To :</label>
+                  <select name="to-unit to-unit--length" id="to-unit--length">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Meter(m)</option>
+                    <option value="2">Kilometer(km)</option>
+                    <option value="3">Milimeter(mm)</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- length section ended -->
+          <section class="units-option option--temp option--inactive">
+            <section class="options">
+              <p class="units-label">Temperature Units:</p>
+              <div class="menu">
+                <div class="menu menu--from">
+                  <label class="label-padding" for="from-unit">From:</label>
+                  <select name="from-unit from-unit--temp" id="from-unit--temp">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Celsius(&deg;C)</option>
+                    <option value="2">Kelvin(K)</option>
+                    <option value="3">Fahrenheit(&deg;F)</option>
+                  </select>
+                </div>
+                <div class="menu menu--to">
+                  <label class="lable-padding" for="to-unit">To :</label>
+                  <select name="to-unit to-unit--length" id="to-unit--temp">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Celsius(&deg;C)</option>
+                    <option value="2">Kelvin(K)</option>
+                    <option value="3">Fahrenheit(&deg;F)</option>
+                    <!-- <option value="4">Micrometer</option> -->
+                    <!-- <option value="5">Nanometer</option> -->
+                    <!-- <option value="4">Mile</option> -->
+                    <!-- <option value="7">Yard</option>
+                    <option value="8">Foot</option>
+                    <option value="9">Inch</option>
+                    <option value="10">Light Year</option> -->
+                  </select>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- Temp section ended -->
+
+          <section class="units-option option--area option--inactive">
+            <section class="options">
+              <p class="units-label">Area Units:</p>
+              <div class="menu">
+                <div class="menu menu--from">
+                  <label class="label-padding" for="from-unit">From:</label>
+                  <select name="from-unit from-unit--area" id="from-unit--area">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Square Meter(m&sup2;)</option>
+                    <option value="2">Square Kilometer(km&sup2;)</option>
+                    <option value="3">Square Centimeter(cm&sup2;)</option>
+                  </select>
+                </div>
+                <div class="menu menu--to">
+                  <label class="lable-padding" for="to-unit">To :</label>
+                  <select name="to-unit to-unit--area" id="to-unit--area">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Square Meter(m&sup2;)</option>
+                    <option value="2">Square Kilometer(km&sup2;)</option>
+                    <option value="3">Square Centimeter(cm&sup2;)</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- Area section ended -->
+
+          <section class="units-option option--vol option--inactive">
+            <section class="options">
+              <p class="units-label">Volume Units:</p>
+              <div class="menu">
+                <div class="menu menu--from">
+                  <label class="label-padding" for="from-unit">From:</label>
+                  <select name="from-unit from-unit--vol" id="from-unit--vol">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Cubic Meter(m&sup3;)</option>
+                    <option value="2">Cubic Kilometer(km&sup3;)</option>
+                    <option value="3">Cubic Centimeter(cm&sup3;)</option>
+                  </select>
+                </div>
+                <div class="menu menu--to">
+                  <label class="lable-padding" for="to-unit">To :</label>
+                  <select name="to-unit to-unit--area" id="to-unit--vol">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Cubic Meter(m&sup3;)</option>
+                    <option value="2">Cubic Kilometer(km&sup3;)</option>
+                    <option value="3">Cubic Centimeter(cm&sup3;)</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- Volume section ended -->
+
+          <section class="units-option option--weight option--inactive">
+            <section class="options">
+              <p class="units-label">Weight Units:</p>
+              <div class="menu">
+                <div class="menu menu--from">
+                  <label class="label-padding" for="from-unit">From:</label>
+                  <select
+                    name="from-unit from-unit--weight"
+                    id="from-unit--weight"
+                  >
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Kilogram(kg)</option>
+                    <option value="2">Gram(g)</option>
+                    <option value="3">Miligram(mg)</option>
+                  </select>
+                </div>
+                <div class="menu menu--to">
+                  <label class="lable-padding" for="to-unit">To :</label>
+                  <select name="to-unit to-unit--area" id="to-unit--weight">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Kilogram(kg)</option>
+                    <option value="2">Gram(g)</option>
+                    <option value="3">Miligram(mg)</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </section>
+          <!-- Weight section ended -->
+
+          <section class="units-option option--time option--inactive">
+            <section class="options">
+              <p class="units-label">Time Units:</p>
+              <div class="menu">
+                <div class="menu menu--from">
+                  <label class="label-padding" for="from-unit">From:</label>
+                  <select name="from-unit from-unit--time" id="from-unit--time">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Second(s)</option>
+                    <option value="2">Minutes(min)</option>
+                    <option value="3">Hours(hr)</option>
+                  </select>
+                </div>
+                <div class="menu menu--to">
+                  <label class="lable-padding" for="to-unit">To :</label>
+                  <select name="to-unit to-unit--area" id="to-unit--time">
+                    <option value="0">Select Unit:</option>
+                    <option value="1">Second(s)</option>
+                    <option value="2">Minutes(min)</option>
+                    <option value="3">Hours(hrs)</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <!-- Time section ended -->
+
+          <section class="inputs-result">
+            <p class="units-label">Enter Values Here!</p>
+            <form class="values" name="unit-convert">
+              <div>
+                <label for="from-value">From Value: </label>
+                <input id="from-value" type="number" placeholder="e.g. 22" />
+              </div>
+              <br />
+              <div>
+                <label for="to-value">Answer: </label>
+                <input type="number" id="to-value" placeholder="Result" />
+              </div>
+              <button class="btn--submit">Submit</button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+    <p class="footer-details">Made with❣️by Siddharth Verma</p>
+    <p class="footer-deails copyright">&copy;All rights reserved</p>
+  </body>
+</html>
+
+<!-- MADE BY: Siddharth Verma -->
+<!-- Don't claim as your own -->
