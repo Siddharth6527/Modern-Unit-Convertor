@@ -300,4 +300,12 @@ input:hover {
   font-size: 1.6rem;
 }
 
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
 /* MADE BY: Siddharth Verma */
